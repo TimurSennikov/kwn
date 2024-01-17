@@ -1,22 +1,6 @@
 # kwn
 kernel without name
 
-# what is it?
-
-kwm (kernel without name) is my own kernel which i wrote following the guide on osdev wiki.
-
-# it`s not copy-pasting?!
-
-i tried to understand all the code, added some functions like line scrolling, and rewrote it from scratch
-
-# why?
-
-i just want to understand kernel better
-
-# here starts actual compiling guide
-
-# compiling
-
 you need i686 cross compiler to build the kernel. to compile everything run bash script "build.sh"
 
 ### bash script options ###
@@ -42,3 +26,7 @@ run in your terminal
 i686-elf-as boot.s -o boot.o
 i686-elf-gcc -c kernel.c -o kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 i686-elf-gcc -T linker.ld -o myos.bin -ffreestanding -O2 -nostdlib boot.o kernel.o -lgcc
+
+
+
+
